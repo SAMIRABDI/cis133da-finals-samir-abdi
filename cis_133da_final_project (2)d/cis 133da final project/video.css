@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: url("img/img2.1.jpg") no-repeat;
+  background-size: cover;
+}
+#content {
+  background-color: rgba(0, 0, 0, 50%);
+}
+img {
+  max-width: 100%;
+}
+
+/*navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0)
+  
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: orange;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: red;
+  color: black;
+  box-shadow: 0, 0, 10px black;
+}
+
+div.gridofgames img {
+  width: 30%;
+  display: flex;
+  padding-top: 15px;
+}
+
+div.gridofgames img:hover {
+  animation: animationimg 0.5s 1 normal ease-out;
+}
+
+@keyframes animationimg {
+  0% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
